@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gửi mẹ yêu 💐</title>
+<meta property="og:title" content="Gửi mẹ yêu 💐">
+<meta property="og:description" content="Có một điều con muốn nói với mẹ... Chạm để mở nhé!">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#ffd9d0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%90%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<p id="boot" style="position:fixed;inset:0;margin:0;display:flex;align-items:center;justify-content:center;font:600 18px sans-serif;color:#e0607e;background:#ffe3da">Đang mở quà... 💗</p>
+<noscript><p style="position:fixed;inset:0;margin:0;display:flex;align-items:center;justify-content:center;background:#ffe3da;color:#e0607e;font:600 16px sans-serif;text-align:center;padding:20px">Hãy bật JavaScript để mở quà nhé 💗</p></noscript>
+<canvas id="fx" aria-hidden="true"></canvas>
+<button id="music" aria-label="Bật/tắt nhạc" hidden><span class="bars"><i></i><i></i><i></i></span></button>
+<main>
+  <section id="s-bloom" class="screen active">
+    <p class="script" id="bloomTop"></p>
+    <button id="bud" aria-label="Chạm để hoa nở">
+      <div class="flower" id="flower"></div>
+      <div class="stem"></div>
+    </button>
+    <p class="hint">Chạm vào bông hoa nhé</p>
+  </section>
+
+  <section id="s-letter" class="screen">
+    <h2 class="script" id="letterTitle"></h2>
+    <article class="card" id="card"></article>
+    <button class="btn" id="toReasons" hidden>Còn nhiều điều con muốn nói 💗</button>
+  </section>
+
+  <section id="s-reasons" class="screen">
+    <h2 class="script">Con biết ơn mẹ vì...</h2>
+    <div id="list"></div>
+    <button class="btn" id="more">Chạm để mở một lời nhắn 💌</button>
+    <button class="btn" id="toEnd" hidden>Món quà cuối ✨</button>
+  </section>
+
+  <section id="s-end" class="screen">
+    <div class="bouquet" id="bouquet">💐</div>
+    <h1 class="script" id="endBig"></h1>
+    <p class="final" id="endSmall"></p>
+    <button class="btn ghost" id="love">Gửi tình yêu cho mẹ 💗</button>
+    <button class="btn" id="replay">Xem lại món quà</button>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
